@@ -56,7 +56,7 @@ const CitySelector = ({onSearch}) => {
       <div className={classes.root}>
         <Row>
           <Col>
-            <h1 className={classes.headings}>Weather Forcast App</h1>
+            <h1 className={classes.headings}>Weather Forecast App</h1>
           </Col>
         </Row>
   
