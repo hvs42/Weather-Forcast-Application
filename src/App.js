@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <Container className="App">
-      <CitySelector onSearch={(city) => setUrl(`${API_BASE_URL}/data/2.5/forecast?q=${city}&appid=${API_KEY}`)} />
+      <CitySelector onSearch={(city) => setUrl(`${API_BASE_URL}/data/2.5/forecast?q=${city}&cnt=5&appid=${API_KEY}`)} />
 
       {/* conditionally render  */}
       {getContent()}
