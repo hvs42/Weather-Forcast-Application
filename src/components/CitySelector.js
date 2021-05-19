@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles({
-  root: {
+  roots: {
     minWidth: 275,
     color: 'var(--text_light)',
     margin: 'auto'
@@ -53,7 +53,7 @@ const CitySelector = ({onSearch}) => {
     const classes = useStyles();
 
     return (
-      <div className={classes.root}>
+      <div className={classes.roots}>
         <Row>
           <Col>
             <h1 className={classes.headings}>Weather Forcast App</h1>

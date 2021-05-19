@@ -1,0 +1,11 @@
+html, body, #root{ margin: 0;
+    height: 100%;
+    position: flex;
+}
+
+body {
+    overflow: hidden; 
+    background-image: url('./images/water.jpg');
+    background-size: cover; 
+    color: white; 
+}
