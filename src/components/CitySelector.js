@@ -16,7 +16,8 @@ const useStyles = makeStyles({
       color: 'inherit',
       fontSize: '2rem',
       height: '40px',
-      padding: '5px 5px 10px',
+      width: "400px",
+      padding: '',
       borderBottom: '1px solid'
   },
   buttons: {
@@ -42,7 +43,7 @@ const useStyles = makeStyles({
       fontWeight: 'bold',
       fontSize: '4rem',
       letterSpacing: '0.02em',
-      padding: '0 0 30px 0'
+      padding: '0 0 30px 0',
   }
 });
 
@@ -52,30 +53,26 @@ const CitySelector = ({onSearch}) => {
 
     const classes = useStyles();
 
+
     return (
       <div className={classes.roots}>
-        <Row>
-          <Col>
-            <h1 className={classes.headings}>Weather Forcast App</h1>
-          </Col>
-        </Row>
-  
-        <Row>
-          <Col xs={4}>
+      <div className="container-fluid justify-content-center">
+
+            <h1 className={classes.headings} id="heading" >Weather Forecast Application</h1>
+            <div className="d-flex inputs justify-content-center">
             <FormControl
               className={classes.inputs}
               placeholder="Enter city"
               onChange={(event) => setCity(event.target.value)}
               value={city}
             />
-          </Col>
-        </Row>
+            </div>
+          
   
-        <Row>
-          <Col>
             <Button className={classes.buttons} onClick={() => onSearch(city)}>Check Weather</Button>
-          </Col>
-        </Row>
+            </div>
+
+         
       </div>
     );
   };
